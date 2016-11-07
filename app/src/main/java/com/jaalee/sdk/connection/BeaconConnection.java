@@ -45,8 +45,8 @@ public class BeaconConnection
 	private final BluetoothGattCallback bluetoothGattCallback;
 //	private final Runnable timeoutHandler;
 	
-	private boolean mStartWritePass = false;//ÊÇ·ñÊÇJaaleeÐÂ°æµÄ¹Ì¼þ
-	public boolean mCurrentIsJaaleeNewBeacon = false;//ÊÇ·ñÊÇJaaleeÐÂ°æµÄ¹Ì¼þ
+	private boolean mStartWritePass = false;//
+	public boolean mCurrentIsJaaleeNewBeacon = false;//
 	private String mPassword;
 	private boolean mPassWordWriteSuccess = false;;
 	
@@ -217,12 +217,12 @@ public class BeaconConnection
 		byte[] arrayOfByte;
 		if (this.mStartWritePass)
 		{
-//			Log.i("NRF  TEST121", "NRF  NRFÐ´Èë");
+//			Log.i("NRF  TEST121", "NRF  NRFÐ´ï¿½ï¿½");
 			arrayOfByte = HashCode.fromString(mPassword.replaceAll("-", "").toLowerCase()).asBytes();
 		}
 		else
 		{
-//			Log.i("NRF  TEST121", "NRF  TIÐ´Èë");
+//			Log.i("NRF  TEST121", "NRF  TIÐ´ï¿½ï¿½");
 			arrayOfByte = new byte[1];
 			arrayOfByte[0] = 1;
 		}
@@ -474,7 +474,7 @@ public class BeaconConnection
 		}
 	}
 	
-	//ÉèÖÃ×´Ì¬
+	//ï¿½ï¿½ï¿½ï¿½×´Ì¬
 	/**
 	 * Set Beacon State
 	 * @param state The state of beacon
@@ -513,7 +513,7 @@ public class BeaconConnection
 		this.bluetoothGatt.writeCharacteristic(Char);
 	}
 	
-	//ÉèÖÃ×´Ì¬
+	//ï¿½ï¿½ï¿½ï¿½×´Ì¬
 	/**
 	 * Set Audio state
 	 * @param state The audio state of beacon
@@ -651,7 +651,7 @@ public class BeaconConnection
 		}
 	}
 
-	//ÐÞ¸ÄÃû×Ö
+	//ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½
 	/**
 	 * Config Beacon's device name
 	 * @param name the name of the beacon,like "jaalee"
@@ -746,7 +746,7 @@ public class BeaconConnection
 					
 					if (JaaleeUuid.BEACON_KEEP_CONNECT_CHAR.equals(characteristic.getUuid()))
 					{
-						//»ñÈ¡µ½ÁËÖµ
+						//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµ
 						//keep connect
 						if (characteristic.getValue().length == 3)
 						{
@@ -836,7 +836,7 @@ public class BeaconConnection
 						 }
 						 else if (JaaleeUuid.JAALEE_BEACON_SERVICE.equals(service.getUuid()))
 						 {
-							 //¶ÁÈ¡ÌØÕ÷Öµ
+							 //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµ
 								BeaconConnection.this.handler.postDelayed(new Runnable() 
 								{
 									@Override

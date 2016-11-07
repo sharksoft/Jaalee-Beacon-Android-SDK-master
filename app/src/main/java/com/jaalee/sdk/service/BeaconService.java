@@ -547,7 +547,7 @@ import java.util.concurrent.TimeUnit;
 			 }
 			 else
 			 {
-				 BeaconService.this.setAlarm(BeaconService.this.scanStartBroadcastPendingIntent, BeaconService.this.scanWaitTimeMillis());//hrb спринй
+				 BeaconService.this.setAlarm(BeaconService.this.scanStartBroadcastPendingIntent, BeaconService.this.scanWaitTimeMillis());//hrb
 			 }
     		 
 		 }

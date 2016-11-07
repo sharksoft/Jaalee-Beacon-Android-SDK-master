@@ -33,15 +33,15 @@ public class JaaleeUuid
 	public static final UUID BEACON_BATTERY_LIFE = UUID.fromString("0000180f-0000-1000-8000-00805f9b34fb");
 	public static final UUID BEACON_BATTERY_LIFE_CHAR = UUID.fromString("00002a19-0000-1000-8000-00805f9b34fb");
 	
-	//新版中有的 BEACON状态控制
+
 	public static final UUID BEACON_STATE_SERVICE = UUID.fromString("0000ff70-0000-1000-8000-00805f9b34fb");
 	public static final UUID BEACON_STATE_CHAR = UUID.fromString("00002a80-0000-1000-8000-00805f9b34fb");
 	
-	//	Beacon铃声控制
+	//
 	public static final UUID BEACON_AUDIO_STATE_SERVICE = UUID.fromString("0000FF60-0000-1000-8000-00805f9b34fb");
 	public static final UUID BEACON_AUDIO_STATE_CHAR = UUID.fromString("00002a70-0000-1000-8000-00805f9b34fb");
 	
-	//发射功率
+
 	public static final UUID BEACON_TX_POWER_SERVICE = UUID.fromString("00001804-0000-1000-8000-00805f9b34fb");
 	public static final UUID BEACON_TX_POWER_CHAR = UUID.fromString("00002a07-0000-1000-8000-00805f9b34fb");
 	
